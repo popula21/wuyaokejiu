@@ -93,10 +93,17 @@ h1 {
 
 .tagline {
   max-width: 28rem;
-  margin: 1.7rem 0 0;
+  margin: 1rem 0 0;
   color: #d6cbb4;
   font-size: 1.15rem;
   line-height: 1.8;
+}
+
+.byline {
+  margin: 1.4rem 0 0;
+  color: var(--paper-deep);
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .page-shell {
