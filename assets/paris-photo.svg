@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">A damaged archival photograph</title>
+  <desc id="desc">A moody constructed image suggesting a river, a bridge, and a marked old photograph.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#252522"/>
+      <stop offset="0.42" stop-color="#6f6959"/>
+      <stop offset="1" stop-color="#171715"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .22"/>
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="#151514"/>
+  <rect x="54" y="50" width="1092" height="660" rx="8" fill="url(#g)" filter="url(#grain)"/>
+  <path d="M84 534 C238 500 309 588 470 546 C662 496 763 444 914 492 C1011 523 1084 508 1120 482 L1120 674 L84 674 Z" fill="#232622" opacity=".88"/>
+  <path d="M130 432 C315 382 514 398 718 348 C860 314 983 315 1090 342" fill="none" stroke="#bbb09a" stroke-width="6" opacity=".45"/>
+  <path d="M156 455 C340 408 531 424 738 374 C886 338 982 340 1072 366" fill="none" stroke="#171715" stroke-width="12" opacity=".42"/>
+  <g opacity=".58" stroke="#d6cfbc" stroke-width="5" fill="none">
+    <path d="M290 590 L290 424"/>
+    <path d="M530 552 L530 388"/>
+    <path d="M774 506 L774 346"/>
+    <path d="M996 517 L996 352"/>
+  </g>
+  <g opacity=".42">
+    <circle cx="410" cy="292" r="54" fill="#d8d1bf"/>
+    <rect x="378" y="340" width="66" height="150" rx="30" fill="#d8d1bf"/>
+    <circle cx="564" cy="274" r="48" fill="#1b1b19"/>
+    <rect x="536" y="318" width="58" height="142" rx="28" fill="#1b1b19"/>
+    <circle cx="714" cy="288" r="54" fill="#d8d1bf"/>
+    <rect x="682" y="338" width="68" height="154" rx="31" fill="#d8d1bf"/>
+  </g>
+  <path d="M64 64 L1137 700" stroke="#4d0e12" stroke-width="7" opacity=".65"/>
+  <rect x="94" y="86" width="250" height="48" fill="#ded6c2" opacity=".78"/>
+  <text x="118" y="118" font-family="Georgia, serif" font-size="24" fill="#2c2822">PARIS / UNFILED</text>
+</svg>
