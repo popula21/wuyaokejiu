@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title>无药可就 favicon</title>
+  <desc>深红底色上的药片裂痕与字母 W</desc>
+  <defs>
+    <linearGradient id="bg" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5e1116" />
+      <stop offset="1" stop-color="#19090b" />
+    </linearGradient>
+    <linearGradient id="pill" x1="18" y1="16" x2="46" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f1e7d6" />
+      <stop offset="1" stop-color="#cfc2ad" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bg)" />
+  <path d="M20 18c-5.523 0-10 4.477-10 10v8c0 5.523 4.477 10 10 10h24c5.523 0 10-4.477 10-10v-8c0-5.523-4.477-10-10-10H20Z" fill="url(#pill)" />
+  <path d="M22 20l20 24" stroke="#8f1d21" stroke-width="3.5" stroke-linecap="round" opacity=".9" />
+  <path d="M16 45l6-18 10 15 8-15 8 18" fill="none" stroke="#8f1d21" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
