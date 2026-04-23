@@ -122,9 +122,26 @@ h1 {
 }
 
 .dossier-panel {
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
   border-left: 3px solid var(--red);
   padding: 1.4rem 0 1.4rem 1.1rem;
   color: var(--muted);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 29, 36, 0.85) rgba(216, 207, 184, 0.08);
+}
+
+.dossier-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dossier-panel::-webkit-scrollbar-track {
+  background: rgba(216, 207, 184, 0.08);
+}
+
+.dossier-panel::-webkit-scrollbar-thumb {
+  background: rgba(124, 29, 36, 0.85);
+  border-radius: 999px;
 }
 
 .dossier nav {
