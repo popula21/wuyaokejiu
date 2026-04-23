@@ -132,10 +132,12 @@ h1 {
 .dossier nav {
   display: grid;
   gap: 0.8rem;
-  max-height: min(70vh, 34rem);
+  height: min(70vh, 34rem);
   overflow-y: auto;
   padding-right: 0.8rem;
   overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
   scrollbar-width: thin;
   scrollbar-color: rgba(124, 29, 36, 0.85) rgba(216, 207, 184, 0.08);
 }
@@ -323,7 +325,7 @@ blockquote p:last-child {
   .dossier nav {
     display: grid;
     gap: 0.75rem;
-    max-height: 18rem;
+    height: 18rem;
     padding-right: 0.35rem;
   }
 
