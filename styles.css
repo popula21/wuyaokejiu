@@ -118,14 +118,12 @@ h1 {
 .dossier {
   position: sticky;
   top: 2rem;
-  height: calc(100vh - 2rem);
   padding-top: 4rem;
 }
 
 .dossier-panel {
   display: flex;
   flex-direction: column;
-  max-height: 100%;
   border-left: 3px solid var(--red);
   padding: 1.4rem 0 1.4rem 1.1rem;
   color: var(--muted);
@@ -134,9 +132,10 @@ h1 {
 .dossier nav {
   display: grid;
   gap: 0.8rem;
-  min-height: 0;
+  max-height: min(70vh, 34rem);
   overflow-y: auto;
   padding-right: 0.8rem;
+  overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: rgba(124, 29, 36, 0.85) rgba(216, 207, 184, 0.08);
 }
@@ -322,9 +321,10 @@ blockquote p:last-child {
   }
 
   .dossier nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem 1rem;
+    display: grid;
+    gap: 0.75rem;
+    max-height: 18rem;
+    padding-right: 0.35rem;
   }
 
   .manuscript {
